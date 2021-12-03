@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  mysql:
+  container_name: mysql57
+  
+  contentdisposition:
+    image: contentdisposition
+    build:
+      context: node_modules/content-disposition
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "index.js"]
+
