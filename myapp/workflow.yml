@@ -22,7 +22,7 @@ jobs:
     
           heroku_app_name: appen11
          
-          dockerfile_directory: ./dockerJo/myapp/src  
+          dockerfile_directory: /DockerBuild/myapp
 
          
           dockerfile_name: Dockerfile
